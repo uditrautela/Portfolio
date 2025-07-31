@@ -11,7 +11,7 @@
     <div id ="header">
         <div class="container">
             <nav>
-                <img src="" calss ="logo">
+              
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -28,21 +28,24 @@
                 </div>
         </div>
     </div>
+    
+
      <!-----------------------------------about------------------------------------------->
     <div id="about">
-        <div class = "Container">
+        <div class = "container">
             <div class="row">
                 <div class ="about-col-1">
-                    <img src="Images/user.png">
+                    <img src="images/user.png" alt="Profile picture of Udit Rautela">
                 </div>
                 <div class ="about-col-2">
                     <h1 class = "sub-title"> About me</h1>
                     <p>Motivated and detail-oriented MCA (Master of Computer Applications) postgraduate with a strong academic foundation in software development, web technologies, and database management. Proficient in languages such as Java, C, HTML, CSS, and MySQL, with hands-on experience in building academic and personal projects.
 Passionate about learning emerging technologies and solving real-world problems through efficient and scalable code. Adept at collaborating in team environments and quick to adapt to new tools and frameworks. Currently seeking an entry-level opportunity where I can contribute to projects, grow my technical skill set, and begin a successful career in the IT industry.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
-                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('Skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiences', event)">Experiences</p>
+                        <p class="tab-links" onclick="opentab('Education', event)">Education</p>
+
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
@@ -51,6 +54,13 @@ Passionate about learning emerging technologies and solving real-world problems 
                             <li><span>App Developer</span><br>Building Android/iOS Apps</li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="Experiences">
+                        <ul>
+                      <li><span>2025 - Present</span><br>As a passionate and curious learner, I may not have professional experience yet, but I am actively working on building real-world projects to strengthen my skills and understanding. I genuinely enjoy learning and creating, and each project I take on is a step forward in my journey toward becoming a better developer. I believe that with consistent effort, dedication, and a love for technology, I can contribute meaningfully to any team or opportunity that comes my way.</li>
+                    
+                        </ul>
+                    </div>
+
                     <div class="tab-contents" id="Education">
                         <ul>
                             <li><span>2023 - 2025</span><br> Pursuing My MCA From Graphic Era Hill University - Bhimtal </li>
@@ -66,7 +76,7 @@ Passionate about learning emerging technologies and solving real-world problems 
     </div>
     <!------------------------------------------------ Services----------------------------------------------------------->
     <div id="services">
-        <div class = "Container">
+        <div class = "container">
             <h1 class ="sub-title">My Services</h1>
             <div class="services-list">
                 <div>
@@ -96,37 +106,38 @@ Passionate about learning emerging technologies and solving real-world problems 
             </div>
         </div>
     <!------------------------------------------------------portfolio----------------------------------------->
-    <div id="portfolio"></div>
+    <div id="portfolio">
             <div class="container">
                 <h1 class ="sub-title">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="Images/work-1.png">
+                        <img src="images/work-1.png">
                         <div class="layer">
                             <h3>Social Media App</h3>
-                            <p>The app connects you the talented people around the world Download it from play store</p>
+                            <p>The app connects you with talented people around the world. Download it from the Play Store.</p> 
                             <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="Images/work-2.png">
+                        <img src="images/work-2.png">
                         <div class="layer">
                             <h3>Music App</h3>
-                            <p>The app connects you the talented people around the world Download it from play store</p>
+                            <p>The app connects you with talented people around the world. Download it from the Play Store.</p>
                             <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="Images/work-3.png">
+                        <img src="images/work-3.png">
                         <div class="layer">
                             <h3>Online Shopping App</h3>
-                            <p>The app connects you the talented people around the world Download it from play store</p>
-                            <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                           <p>The app connects you with talented people around the world. Download it from the Play Store.</p>
+                           <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <a href="#" class="btn">See more</a>
             </div>
+        </div>
 <!--------------------------contact---------------------->
     <div id="contact">
         <div class="container">
@@ -137,18 +148,17 @@ Passionate about learning emerging technologies and solving real-world problems 
                     <p><i class="fa-solid fa-phone"></i>Contact No:8448163064 </p>
                     <p><i class="fa-brands fa-whatsapp"></i>WhatsApp No:8448163064 </p>
                     <div class="social-icons">
-                    <a herf="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a herf=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/udit-rautela-2095642a6/"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="Images/My-CV.pdf" download class="btn btn2">Download CV</a>
+                    <a href="images/My-CV.pdf" download class="btn btn2">Download CV</a>
                 </div>
-
-            <!-----------------------------------Form-fill-------------------------------------------->
+ <!-----------------------------------Form-fill-------------------------------------------->
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
                         <input type = "text" name="Name" placeholder="Your Name" required>
                         <input type = "email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit"class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
@@ -156,15 +166,16 @@ Passionate about learning emerging technologies and solving real-world problems 
             </div>
         </div>
     </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabename){
-            for (tablink of tablinks){
+        function opentab(tabename, event){
+            for (let tablink of tablinks){
                 tablink.classList.remove("active-link");
             }
-            for (tabcontent of tabcontents){
+            for ( let tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -188,7 +199,7 @@ Passionate about learning emerging technologies and solving real-world problems 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxpJlPEQ4d2z_52nw_3ObEfP_3aWX5Hr_5INpKTZ69SwakH9DIyCJysq-SBR6NcMC9f/exec'
   const form = document.forms['submit-to-google-sheet']
-  const med =document.getElementById("msg")
+  const msg =document.getElementById("msg")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
